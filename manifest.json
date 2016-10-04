@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "Jouko",
+    "description": "This extension change every joukko to Jouko",
+    "version": "0.12",
+    "icons": { "128": "icon_128.png", "48": "icon_48.png"},
+    "description": "Change every joukko to Jouko",
+    "author": "Karlin",
+    "content_scripts": [ { "matches": [ "*://*/*" ], "js": [ "jouko.js" ], "run_at": "document_end" } ]
+}
